@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtocolAnalyzer.Application", "ProtocolAnalyzer.Application\ProtocolAnalyzer.Application.csproj", "{A4BC990A-A206-480F-A3CF-D29F916EBD32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Common", "0. Common", "{37DADD11-328E-434B-94FB-2F72163AECBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Application", "1. Application", "{69588568-27EF-4F0D-B6A3-0E377EB281A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{FCE08963-B956-4F68-9F7E-D396582F983A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Networking", "3. Networking", "{F7F4753C-62F6-4668-8AE9-D661FC0B7733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtocolAnalyzer.Common", "ProtocolAnalyzer.Common\ProtocolAnalyzer.Common.csproj", "{884E2729-23EA-4549-B025-004DC4CB1C5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtocolAnalyzer.Domain", "ProtocolAnalyzer.Domain\ProtocolAnalyzer.Domain.csproj", "{6FB2E8DC-3CEE-4283-9418-AF2ACF49080A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtocolAnalyzer.Networking", "ProtocolAnalyzer.Networking\ProtocolAnalyzer.Networking.csproj", "{4E4BA60B-9354-4F9D-B689-8131FEE45B88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4BC990A-A206-480F-A3CF-D29F916EBD32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BC990A-A206-480F-A3CF-D29F916EBD32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BC990A-A206-480F-A3CF-D29F916EBD32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BC990A-A206-480F-A3CF-D29F916EBD32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{884E2729-23EA-4549-B025-004DC4CB1C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884E2729-23EA-4549-B025-004DC4CB1C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{884E2729-23EA-4549-B025-004DC4CB1C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{884E2729-23EA-4549-B025-004DC4CB1C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB2E8DC-3CEE-4283-9418-AF2ACF49080A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB2E8DC-3CEE-4283-9418-AF2ACF49080A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB2E8DC-3CEE-4283-9418-AF2ACF49080A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB2E8DC-3CEE-4283-9418-AF2ACF49080A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4BA60B-9354-4F9D-B689-8131FEE45B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4BA60B-9354-4F9D-B689-8131FEE45B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4BA60B-9354-4F9D-B689-8131FEE45B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4BA60B-9354-4F9D-B689-8131FEE45B88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4BC990A-A206-480F-A3CF-D29F916EBD32} = {69588568-27EF-4F0D-B6A3-0E377EB281A9}
+		{884E2729-23EA-4549-B025-004DC4CB1C5D} = {37DADD11-328E-434B-94FB-2F72163AECBE}
+		{6FB2E8DC-3CEE-4283-9418-AF2ACF49080A} = {FCE08963-B956-4F68-9F7E-D396582F983A}
+		{4E4BA60B-9354-4F9D-B689-8131FEE45B88} = {F7F4753C-62F6-4668-8AE9-D661FC0B7733}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1337AA9F-53AF-47ED-8510-266D2083977D}
+	EndGlobalSection
+EndGlobal
