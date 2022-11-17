@@ -3,8 +3,18 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
+    <EnablePreviewFeatures>True</EnablePreviewFeatures>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ConsoleService.cs~RFa6c2d77.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProtocolAnalyzer.Domain\ProtocolAnalyzer.Domain.csproj" />
+    <ProjectReference Include="..\ProtocolAnalyzer.Networking\ProtocolAnalyzer.Networking.csproj" />
+  </ItemGroup>
 
 </Project>

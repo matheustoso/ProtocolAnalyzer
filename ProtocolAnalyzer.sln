@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtocolAnalyzer.Application", "ProtocolAnalyzer.Application\ProtocolAnalyzer.Application.csproj", "{A4BC990A-A206-480F-A3CF-D29F916EBD32}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Common", "0. Common", "{37DADD11-328E-434B-94FB-2F72163AECBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtocolAnalyzer.Application", "ProtocolAnalyzer.Application\ProtocolAnalyzer.Application.csproj", "{A4BC990A-A206-480F-A3CF-D29F916EBD32}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Application", "1. Application", "{69588568-27EF-4F0D-B6A3-0E377EB281A9}"
 EndProject
@@ -13,11 +11,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Networking", "3. Networking", "{F7F4753C-62F6-4668-8AE9-D661FC0B7733}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtocolAnalyzer.Common", "ProtocolAnalyzer.Common\ProtocolAnalyzer.Common.csproj", "{884E2729-23EA-4549-B025-004DC4CB1C5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtocolAnalyzer.Domain", "ProtocolAnalyzer.Domain\ProtocolAnalyzer.Domain.csproj", "{6F7359BD-CFE3-41A0-9D52-CD4A4F2DFC94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtocolAnalyzer.Domain", "ProtocolAnalyzer.Domain\ProtocolAnalyzer.Domain.csproj", "{6FB2E8DC-3CEE-4283-9418-AF2ACF49080A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtocolAnalyzer.Networking", "ProtocolAnalyzer.Networking\ProtocolAnalyzer.Networking.csproj", "{FF54D5E0-DDA1-47AE-90F9-F53A9B735745}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtocolAnalyzer.Networking", "ProtocolAnalyzer.Networking\ProtocolAnalyzer.Networking.csproj", "{4E4BA60B-9354-4F9D-B689-8131FEE45B88}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE13167B-F33B-48CE-A392-DF91EC87D0FE}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,27 +30,22 @@ Global
 		{A4BC990A-A206-480F-A3CF-D29F916EBD32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4BC990A-A206-480F-A3CF-D29F916EBD32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4BC990A-A206-480F-A3CF-D29F916EBD32}.Release|Any CPU.Build.0 = Release|Any CPU
-		{884E2729-23EA-4549-B025-004DC4CB1C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{884E2729-23EA-4549-B025-004DC4CB1C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{884E2729-23EA-4549-B025-004DC4CB1C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{884E2729-23EA-4549-B025-004DC4CB1C5D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6FB2E8DC-3CEE-4283-9418-AF2ACF49080A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FB2E8DC-3CEE-4283-9418-AF2ACF49080A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FB2E8DC-3CEE-4283-9418-AF2ACF49080A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FB2E8DC-3CEE-4283-9418-AF2ACF49080A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E4BA60B-9354-4F9D-B689-8131FEE45B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E4BA60B-9354-4F9D-B689-8131FEE45B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E4BA60B-9354-4F9D-B689-8131FEE45B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E4BA60B-9354-4F9D-B689-8131FEE45B88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F7359BD-CFE3-41A0-9D52-CD4A4F2DFC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F7359BD-CFE3-41A0-9D52-CD4A4F2DFC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F7359BD-CFE3-41A0-9D52-CD4A4F2DFC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F7359BD-CFE3-41A0-9D52-CD4A4F2DFC94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF54D5E0-DDA1-47AE-90F9-F53A9B735745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF54D5E0-DDA1-47AE-90F9-F53A9B735745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF54D5E0-DDA1-47AE-90F9-F53A9B735745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF54D5E0-DDA1-47AE-90F9-F53A9B735745}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A4BC990A-A206-480F-A3CF-D29F916EBD32} = {69588568-27EF-4F0D-B6A3-0E377EB281A9}
-		{884E2729-23EA-4549-B025-004DC4CB1C5D} = {37DADD11-328E-434B-94FB-2F72163AECBE}
-		{6FB2E8DC-3CEE-4283-9418-AF2ACF49080A} = {FCE08963-B956-4F68-9F7E-D396582F983A}
-		{4E4BA60B-9354-4F9D-B689-8131FEE45B88} = {F7F4753C-62F6-4668-8AE9-D661FC0B7733}
+		{6F7359BD-CFE3-41A0-9D52-CD4A4F2DFC94} = {FCE08963-B956-4F68-9F7E-D396582F983A}
+		{FF54D5E0-DDA1-47AE-90F9-F53A9B735745} = {F7F4753C-62F6-4668-8AE9-D661FC0B7733}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1337AA9F-53AF-47ED-8510-266D2083977D}
