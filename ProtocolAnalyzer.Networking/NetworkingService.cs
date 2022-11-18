@@ -35,14 +35,14 @@ namespace ProtocolAnalyzer.Networking
             {
                 var dumpTask = Task.Factory.StartNew(_dumpService.Start, TaskCreationOptions.LongRunning);
 
-                listener.Reply(Message.OK);//not received OK
+                listener.Reply(Message.OK);
 
-                while (!dumpTask.IsCompleted) Console.WriteLine(listener.Receive().Data);//breaks as soon as dumptask completes, prints blanks
+                while (!dumpTask.IsCompleted) Console.WriteLine(listener.Receive().Data);
 
                 data = new Message("TCPDUMP-DATA: " + dumpTask.Result);
 
                 Console.WriteLine("replying data");
-                listener.Reply(data);//where does the data go
+                listener.Reply(data);
                 
                 foreach (var peer in Configuration.Peers.Where(p => p.Protocol == host.Protocol && !p.IP.Equals(message.EndPoint?.Address.ToString()))) Task.Run(() => RelayData(data, peer));
             }
@@ -67,13 +67,13 @@ namespace ProtocolAnalyzer.Networking
             Message data;
             var sender = GetSender(peer);
 
-            sender.Send(Message.START_TCPDUMP);//prints
+            sender.Send(Message.START_TCPDUMP);
 
-            Console.WriteLine(sender.Receive().Data);//not received OK
+            Console.WriteLine(sender.Receive().Data);
 
-            var receiveTask = Task.Run(sender.Receive);//instantly completes because quic is fucked
+            var receiveTask = Task.Run(sender.Receive);
 
-            while (!receiveTask.IsCompleted)//wont work
+            while (!receiveTask.IsCompleted)
             {
                 Console.WriteLine("sent dump");
                 sender.Send(new Message(Guid.NewGuid().ToString()));
@@ -81,7 +81,7 @@ namespace ProtocolAnalyzer.Networking
 
             data = receiveTask.Result;
 
-            while(!data.Data.Contains("TCPDUMP-DATA:")) //stays here forever
+            while(!data.Data.Contains("TCPDUMP-DATA:"))
             {
                 data = sender.Receive();
             }

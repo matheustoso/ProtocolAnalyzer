@@ -16,7 +16,7 @@ namespace ProtocolAnalyzer.Networking.TCP
         public TCPListener(Host host)
         {
             Host = host;
-            Listener = new(IPAddress.Parse("192.168.0.48"), Host.Port);
+            Listener = new(IPAddress.Any, Host.Port);
             Listener.Start();
             Client = Listener.AcceptTcpClient();
         }
